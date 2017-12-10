@@ -1,6 +1,6 @@
 SETUP_INFO = dict(
     name='appypod',
-    version='1.3',
+    version='0.1',
     # install_requires=[],
     description="appy.pod for Python 3",
     license='Free BSD',
