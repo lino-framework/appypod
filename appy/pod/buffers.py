@@ -137,7 +137,7 @@ class Buffer:
             key = self.env.tags['number-columns-repeated']
             columnNumber = self.env.getTable().nbOfColumns -1
             nb = (key in attrs) and attrs[key] or '1'
-            attrs[key] = ':columnsRepeated[%d]|%s' % (columnNumber, nb)
+            attrs[key] = ":columnsRepeated[%d]|'%s'" % (columnNumber, nb)
 
     def dumpStartElement(self, elem, attrs={}, ignoreAttrs=(), hook=False,
                          noEndTag=False, renamedAttrs=None):
