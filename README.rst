@@ -3,6 +3,8 @@ The ``appypod`` package
 =======================
 
 
+
+
 The `appypod` project is a partial redistribution of Gaetan Delannay's
 `Appy framework <http://appyframework.org/>`__ in order to make
 `appy.pod` available under Python 3.
@@ -25,6 +27,9 @@ has no file `setup.py`.  Gaetan "installs" it by adding into his
 `site-packages` a symbolic link to the `trunk` directory of the
 repository.  We therefore cannot specify it in a `requirements.txt
 <https://pip.readthedocs.io/en/1.1/requirements.html>`__ file.
+
+Stefan Klug started a similar attempt in 2015:
+https://github.com/stefanklug/appypod
 
 
 **Manual changes by LS**
