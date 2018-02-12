@@ -3,8 +3,6 @@ The ``appypod`` package
 =======================
 
 
-
-
 The `appypod` project is a partial redistribution of Gaetan Delannay's
 `Appy framework <http://appyframework.org/>`__ in order to make
 `appy.pod` available under Python 3.
