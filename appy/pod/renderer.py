@@ -2,6 +2,7 @@
 # ------------------------------------------------------------------------------
 import zipfile, shutil, xml.sax, os, os.path, re, mimetypes, time
 from collections import UserDict
+from io import open
 from appy import utils
 import appy.pod
 from appy.pod import PodError
@@ -583,7 +584,7 @@ class Renderer:
         # Call the user-defined "finalize" function when present
         if self.finalizeFunction:
             try:
-                self.finalizeFunction(self.unzipFolder, self)
+                self.finalizeFunction(self.unzipFolder)
             except Exception as e:
                 print(WARNING_FINALIZE_ERROR % str(e))
         # Re-zip the result, first as an OpenDocument file of the same type as
