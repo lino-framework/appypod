@@ -33,6 +33,9 @@ has no file `setup.py`.  Gaetan "installs" it by adding into his
 repository.  We therefore cannot specify it in a `requirements.txt
 <https://pip.readthedocs.io/en/1.1/requirements.html>`__ file.
 
+Stefan Klug started a similar attempt in 2015:
+https://github.com/stefanklug/appypod
+
 
 **Manual changes by LS**
 
