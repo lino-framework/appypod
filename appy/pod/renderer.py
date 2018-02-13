@@ -583,10 +583,10 @@ class Renderer:
             f.close()
         # Call the user-defined "finalize" function when present
         if self.finalizeFunction:
-            # try:
-            self.finalizeFunction(self.unzipFolder, self)
-            # except Exception as e:
-            #     print(WARNING_FINALIZE_ERROR % str(e))
+            try:
+                self.finalizeFunction(self.unzipFolder, self)
+            except Exception as e:
+                print(WARNING_FINALIZE_ERROR % str(e))
         # Re-zip the result, first as an OpenDocument file of the same type as
         # the POD template (odt, ods...)
         resultExt = self.getTemplateType()
