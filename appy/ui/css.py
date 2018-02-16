@@ -1,5 +1,6 @@
 # ~license~
 # ------------------------------------------------------------------------------
+from past.builtins import basestring
 import re
 from appy.utils.string import sadd, sremove
 
