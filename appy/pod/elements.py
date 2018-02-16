@@ -1,5 +1,6 @@
 # ~license~
 # ------------------------------------------------------------------------------
+from builtins import str
 from xml.sax.saxutils import quoteattr
 from appy.xml import XmlElement
 from appy.pod.odf_parser import OdfEnvironment as ns
@@ -178,8 +179,8 @@ class Expression(PodElement):
             res = res(context, applyTemplate=False)
             # Force escapeXml to False
             escapeXml = False
-        # else:
-        #     res = unicode(res)
+        else:
+            res = str(res)
         return res, escapeXml
 
     def __repr__(self):
