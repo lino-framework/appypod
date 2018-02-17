@@ -2,6 +2,7 @@
 # ------------------------------------------------------------------------------
 import zipfile, shutil, xml.sax, os, os.path, re, mimetypes, time
 from collections import UserDict
+from io import open
 from appy import utils
 import appy.pod
 from appy.pod import PodError
