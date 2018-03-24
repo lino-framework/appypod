@@ -8,6 +8,7 @@ SETUP_INFO = dict(
     author='Luc Saffre',
     author_email='luc@saffre-rumma.net',
     url="http://appypod.lino-framework.org",
+    install_requires = ['future'],
     long_description="""\
 
 The `appypod` project is a partial redistribution of Gaetan Delannay's
@@ -80,8 +81,12 @@ Operating System :: OS Independent""".splitlines())
 SETUP_INFO.update(packages=[n for n in """
 appy
 appy.pod
+appy.http
+appy.model
+appy.px
+appy.ui
+appy.utils
+appy.xml
 """.splitlines() if n])
 
 SETUP_INFO.update(package_data=dict())
-
-
