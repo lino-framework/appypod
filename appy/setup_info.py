@@ -33,13 +33,14 @@ has no file `setup.py`.  Gaetan "installs" it by adding into his
 repository.  We therefore cannot specify it in a `requirements.txt
 <https://pip.readthedocs.io/en/1.1/requirements.html>`__ file.
 
-Stefan Klug started a similar attempt in 2015:
-https://github.com/stefanklug/appypod
-
+This repository has only a minimal test suite, but it is also being
+tested in the test suite of the Lino framework at
+https://travis-ci.org/lino-framework/book
 
 **Manual changes by LS**
 
-I added a file setup.py, tasks.py and appy/setup_info.py
+I added files :file:`setup.py`, :file:`tasks.py`,
+:file:`tests/__init__.py` and :file:`appy/setup_info.py`.
 
 I manually fixed the following places which had trivial errors::
 
@@ -64,6 +65,14 @@ I manually fixed the following places which had trivial errors::
     exec 'import %s' % contextPkg
                    ^
   SyntaxError: Missing parentheses in call to 'exec'
+
+**Others**
+
+Christian Jauvin contributed a fix to this distribution.
+
+Stefan Klug started a similar attempt in 2015:
+https://github.com/stefanklug/appypod
+
 
 
 """,
