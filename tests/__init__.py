@@ -9,7 +9,7 @@ Examples how to run these tests::
 """
 import unittest
 from setuptools import find_packages
-from appy import SETUP_INFO
+from appy.setup_info import SETUP_INFO
 
 
 class PackagesTests(unittest.TestCase):

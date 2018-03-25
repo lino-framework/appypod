@@ -30,4 +30,3 @@ class Config:
     ui = None
 # ------------------------------------------------------------------------------
 
-from .setup_info import SETUP_INFO  # used in test suite
