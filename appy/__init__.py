@@ -29,3 +29,5 @@ class Config:
     # Place here a appy.ui.Config instance defining user-interface options
     ui = None
 # ------------------------------------------------------------------------------
+
+from .setup_info import SETUP_INFO  # used in test suite

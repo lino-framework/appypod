@@ -1,10 +1,9 @@
 SETUP_INFO = dict(
     name='appypod',
     version='0.1',
-    # install_requires=[],
     description="appy.pod for Python 3",
     license='Free BSD',
-    # test_suite='tests',
+    test_suite='tests',
     author='Luc Saffre',
     author_email='luc@saffre-rumma.net',
     url="http://appypod.lino-framework.org",
@@ -81,8 +80,11 @@ Operating System :: OS Independent""".splitlines())
 SETUP_INFO.update(packages=[n for n in """
 appy
 appy.pod
+appy.pod.test
+appy.pod.test.contexts
 appy.http
 appy.model
+appy.model.fields
 appy.px
 appy.ui
 appy.utils
