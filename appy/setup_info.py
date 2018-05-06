@@ -109,4 +109,12 @@ appy.utils
 appy.xml
 """.splitlines() if n])
 
-SETUP_INFO.update(package_data=dict())
+
+def add_package_data(package, *patterns):
+    l = SETUP_INFO['package_data'].setdefault(package, [])
+    l.extend(patterns)
+    return l
+
+
+add_package_data('appy.pod', '*.xmlt')
+
