@@ -1,7 +1,7 @@
 SETUP_INFO = dict(
-    name='appypod',
+    name='appy',  # not published on PyPI
     version='0.1',
-    description="appy.pod for Python 3",
+    description="appy.pod for Python 3 (Luc)",
     license='Free BSD',
     test_suite='tests',
     author='Luc Saffre',
@@ -20,7 +20,7 @@ model, ui, http and xml.
 
 **Why**
 
-Gaetan is advancing with porting his appy framework to Python 3, and
+Gaetan is advancing with porting his Appy framework to Python 3, and
 his work is published on `forge.pallavi.be
 <https://forge.pallavi.be/projects/appy-python-3>`__, and we can
 easily check out a copy of the repository::
@@ -33,7 +33,16 @@ has no file `setup.py`.  Gaetan "installs" it by adding into his
 repository.  We therefore cannot specify it in a `requirements.txt
 <https://pip.readthedocs.io/en/1.1/requirements.html>`__ file.
 
-This repository has only a minimal test suite, but it is also being
+The only benefit of this fork is that you can add it to your
+:file:`requirements.txt` file::
+
+  git+https://github.com/lino-framework/appypod.git#egg=appy
+
+A clear disadvantage of this fork is that it is behind the original.
+Gaetan continues to work on *appy-python-3*, and Luc has no plans to
+keep up-to-date.  Both G and L and working on a solution.
+
+This repository also adds a minimal test suite, but it is also being
 tested in the test suite of the Lino framework at
 https://travis-ci.org/lino-framework/book
 
