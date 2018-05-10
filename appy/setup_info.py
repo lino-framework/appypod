@@ -10,9 +10,22 @@ SETUP_INFO = dict(
     install_requires = ['future'],
     long_description="""\
 
-The `appypod` project is a partial redistribution of Gaetan Delannay's
-`Appy framework <http://appyframework.org/>`__ in order to make
-`appy.pod` available under Python 3.
+The `appypod` project is a partial and meanwhile obsolete
+redistribution of Gaetan Delannay's `Appy framework
+<http://appyframework.org/>`__ in order to make `appy.pod` available
+under Python 3.
+
+This project is no longer needed.  To use the author's development
+version you can now specify the following in your a `requirements.txt
+<https://pip.readthedocs.io/en/1.1/requirements.html>`__ file::
+
+    -e svn+https://svn.forge.pallavi.be/appy-dev/dev1#egg=appy
+
+See `my blog <http://luc.lino-framework.org/blog/2018/0510.html>`__
+for details. 
+
+The remaining text is no longer relevant.
+
 
 Note that it is only an *excerpt* of the full Appy framework: the
 `pod` subpackage and a few others which are needed for pod: utils,
